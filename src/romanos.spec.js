@@ -33,6 +33,18 @@ describe("Conversión a números romanos", () => {
     expect(convertirARomano(27)).toEqual("XXVII");
   });
 
+  it("debería convertir 44 a 'XLIV'", () => {
+    expect(convertirARomano(44)).toEqual("XLIV");
+  });
+
+  it("debería convertir 99 a 'XCIX'", () => {
+    expect(convertirARomano(99)).toEqual("XCIX");
+  });
+
+  it("debería convertir 2024 a 'MMXXIV'", () => {
+    expect(convertirARomano(2024)).toEqual("MMXXIV");
+  });
+
 
 });
 
