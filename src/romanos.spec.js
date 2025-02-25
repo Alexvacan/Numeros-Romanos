@@ -21,6 +21,11 @@ describe("Conversión a números romanos", () => {
     expect(convertirARomano(5)).toEqual("V");
   });
 
+  it("debería convertir 6 a 'VI'", () => {
+  expect(convertirARomano(6)).toEqual("VI");
+  });
+
+
 });
 
 
