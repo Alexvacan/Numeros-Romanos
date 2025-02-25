@@ -3,5 +3,6 @@ export default function convertirARomano(numero) {
     if (numero === 2) return "II";
     if (numero === 3) return "III";
     if (numero === 4) return "IV";
+    if (numero === 5) return "V";
   }
   
