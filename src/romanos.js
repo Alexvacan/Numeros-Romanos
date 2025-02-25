@@ -1,9 +1,29 @@
 export default function convertirARomano(numero) {
-    if (numero === 1) return "I";
-    if (numero === 2) return "II";
-    if (numero === 3) return "III";
-    if (numero === 4) return "IV";
-    if (numero === 5) return "V";
-    if (numero === 6) return "VI";
+    const valores = [
+      { valor: 1000, simbolo: "M" },
+      { valor: 900, simbolo: "CM" },
+      { valor: 500, simbolo: "D" },
+      { valor: 400, simbolo: "CD" },
+      { valor: 100, simbolo: "C" },
+      { valor: 90, simbolo: "XC" },
+      { valor: 50, simbolo: "L" },
+      { valor: 40, simbolo: "XL" },
+      { valor: 10, simbolo: "X" },
+      { valor: 9, simbolo: "IX" },
+      { valor: 5, simbolo: "V" },
+      { valor: 4, simbolo: "IV" },
+      { valor: 1, simbolo: "I" },
+    ];
+  
+    let resultado = "";
+  
+    for (const { valor, simbolo } of valores) {
+      while (numero >= valor) {
+        resultado += simbolo;
+        numero -= valor;
+      }
+    }
+  
+    return resultado;
   }
   
