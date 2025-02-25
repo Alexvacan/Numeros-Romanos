@@ -25,6 +25,14 @@ describe("Conversión a números romanos", () => {
   expect(convertirARomano(6)).toEqual("VI");
   });
 
+  it("debería convertir 9 a 'IX'", () => {
+    expect(convertirARomano(9)).toEqual("IX");
+  });
+
+  it("debería convertir 27 a 'XXVII'", () => {
+    expect(convertirARomano(27)).toEqual("XXVII");
+  });
+
 
 });
 
