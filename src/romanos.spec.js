@@ -12,6 +12,15 @@ describe("Conversión a números romanos", () => {
   it("debería convertir 3 a 'III'", () => {
     expect(convertirARomano(3)).toEqual("III");
   });
+
+  it("debería convertir 4 a 'IV'", () => {
+    expect(convertirARomano(4)).toEqual("IV");
+  });
+
+  it("debería convertir 5 a 'V'", () => {
+    expect(convertirARomano(5)).toEqual("V");
+  });
+
 });
 
 
